@@ -5,10 +5,7 @@ import React from "react";
 export default function HeroSection() {
   return (
     <div
-      className="relative bg-cover flex h-dvh w-full flex-col overflow-hidden"
-      style={{
-        backgroundImage: `url('/images/hero.jpeg')`,
-      }}
+      className="relative bg-cover sm:bg-cover flex h-dvh w-full flex-col overflow-hidden bg-[url('/images/hero-mobile.jpg')] sm:bg-[url('/images/hero.jpeg')]"
     >
       <main className="container mx-auto flex flex-1 flex-col items-center sm:items-start justify-start mt-20 sm:mt-30 overflow-hidden px-8 sm:px-20">
         <section className="z-20 flex flex-col items-center justify-center gap-[18px] sm:gap-6">

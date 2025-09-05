@@ -1,17 +1,12 @@
-import { dropdownNavs } from "../data/dropdownNavs.data";
 import { ChevronUpIcon, ChevronDownIcon } from "./Icons";
 import { DropdownState } from "./ui/Navbar";
+import { NavigationItem } from "../interfaces/navigation.interface";
+import { exploreNavs, kidsNavs, menNavs, womenNavs } from "../data/navs.data";
+import Link from "next/link";
 
 interface Props {
   drapdownState: DropdownState;
   setDrapdownState: React.Dispatch<React.SetStateAction<DropdownState>>;
-}
-
-interface NavigationItem {
-  title: string;
-  path: string;
-  isDrapdown: boolean;
-  navs?: typeof dropdownNavs;
 }
 
 export default function NavigationComponent({
@@ -23,20 +18,25 @@ export default function NavigationComponent({
       title: "Mujeres",
       path: "javascript:void(0)",
       isDrapdown: true,
-      navs: dropdownNavs,
+      navs: womenNavs,
     },
     {
       title: "Hombres",
       path: "javascript:void(0)",
-      isDrapdown: false,
-      navs: [],
+      isDrapdown: true,
+      navs: menNavs,
     },
-    { title: "Niños", path: "javascript:void(0)", isDrapdown: false, navs: [] },
+    {
+      title: "Niños",
+      path: "javascript:void(0)",
+      isDrapdown: true,
+      navs: kidsNavs,
+    },
     {
       title: "Explora",
       path: "javascript:void(0)",
-      isDrapdown: false,
-      navs: [],
+      isDrapdown: true,
+      navs: exploreNavs,
     },
   ];
 
@@ -63,12 +63,12 @@ export default function NavigationComponent({
                 )}
               </button>
             ) : (
-              <a
+              <Link
                 href={item.path}
                 className="block text-gray-700 hover:text-indigo-600"
               >
                 {item.title}
-              </a>
+              </Link>
             )}
             {item.isDrapdown &&
             drapdownState.idx == idx &&
@@ -77,30 +77,20 @@ export default function NavigationComponent({
                 <ul className="max-w-screen-xl mx-auto grid items-center gap-6 md:p-8 md:grid-cols-2 lg:grid-cols-3">
                   {item.navs?.map((dropdownItem, idx) => (
                     <li key={idx}>
-                      <p className="text-indigo-600 text-sm">
-                        {dropdownItem.label}
-                      </p>
                       <ul className="mt-5 space-y-6">
                         {dropdownItem.navs.map((navItem, idx) => (
                           <li key={idx} className="group">
-                            <a
+                            <Link
                               href={navItem.path}
                               className="flex gap-3 items-center"
                             >
-                              <div className="w-12 h-12 rounded-full bg-indigo-50 text-indigo-600 flex items-center justify-center duration-150 group-hover:bg-indigo-600 group-hover:text-white md:w-14 md:h-14">
-                                {navItem.icon}
-                              </div>
-                              <div>
-                                <span className="text-gray-800 duration-200 group-hover:text-indigo-600 text-sm font-medium md:text-base">
-                                  {navItem.title}
-                                </span>
-                                <p className="text-sm text-gray-600 group-hover:text-gray-800 mt-1">
-                                  {navItem.desc}
-                                </p>
-                              </div>
-                            </a>
+                              <span className="text-gray-800 duration-200 group-hover:text-indigo-600 text-sm font-medium md:text-base">
+                                {navItem.title}
+                              </span>
+                            </Link>
                           </li>
                         ))}
+                        <hr />
                       </ul>
                     </li>
                   ))}

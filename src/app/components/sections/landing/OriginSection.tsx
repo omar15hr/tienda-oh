@@ -26,7 +26,7 @@ export default function OriginSection() {
           />
 
           <div className="absolute bottom-8 left-8 right-8 z-20">
-            <div className="bg-white/90 backdrop-blur-sm p-6 rounded-lg">
+            <div className="bg-white/90 backdrop-blur-sm p-6">
               <h3 className="text-xl font-bold text-gray-900 mb-2">
                 Handcrafted Excellence
               </h3>

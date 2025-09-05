@@ -66,12 +66,14 @@ export default function Navbar() {
               />
               <div className="flex-1 items-center justify-end gap-x-6 space-y-3 md:flex md:space-y-0">
                 <SearchInput />
-                <Link href="">
-                  <CartIcon />
-                </Link>
-                <Link href="">
-                  <HeartIcon />
-                </Link>
+                <div className="flex items-center gap-x-4">
+                  <Link href="">
+                    <CartIcon />
+                  </Link>
+                  <Link href="">
+                    <HeartIcon />
+                  </Link>
+                </div>
               </div>
             </ul>
           </div>

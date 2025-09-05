@@ -4,7 +4,7 @@ export default function ImagesSection() {
   return (
     <section className="bg-white py-16 px-4">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
           <div className="space-y-6">
             <h2 className="text-3xl lg:text-4xl font-bold font-montserrat">
               HOMBRES
@@ -40,7 +40,7 @@ export default function ImagesSection() {
           <p className="text-lg mb-8 max-w-2xl mx-auto font-poppins">
             Discover our carefully curated collections designed for every style and occasion
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row items-center gap-4 justify-center">
             <button className="bg-black text-white text-small h-10 w-[193px] px-[16px] py-[10px] leading-5 font-medium font-poppins cursor-pointer">
               Colección Hombres
             </button>
