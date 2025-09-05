@@ -4,7 +4,7 @@ export default function ImagesSection() {
   return (
     <section className="bg-white py-16 px-4">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-0">
           <div className="space-y-6">
             <h2 className="text-3xl lg:text-4xl font-bold font-montserrat">
               HOMBRES

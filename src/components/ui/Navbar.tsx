@@ -1,9 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { CartIcon, CloseIcon, HeartIcon, MenuIcon } from "../Icons";
-import NavigationComponent from "../NavigationComponent";
 import Link from "next/link";
+import { CloseIcon, MenuIcon, CartIcon, HeartIcon } from "@/components/Icons";
+import NavigationComponent from "../NavigationComponent";
 import SearchInput from "../SearchInput";
 
 export type DropdownState = {
@@ -42,7 +42,7 @@ export default function Navbar() {
       >
         <div className="items-center gap-x-14 px-4 max-w-screen-xl mx-auto md:flex md:px-8">
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
-            <Link href="javascript:void(0)">
+            <Link href="/">
               <h1 className="font-autour text-4xl">OH</h1>
             </Link>
             <div className="md:hidden">

@@ -1,7 +1,12 @@
 "use client";
 
+import {
+  InstagramIcon,
+  FacebookIcon,
+  TikTokIcon,
+  YoutubeIcon,
+} from "@/components/Icons";
 import Link from "next/link";
-import { FacebookIcon, InstagramIcon, TikTokIcon, YoutubeIcon } from "../Icons";
 
 export default function Footer() {
   const socialLinks = [
@@ -66,7 +71,6 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Mujeres */}
           <div className="col-span-1 text-left sm:text-center lg:text-center">
             <h3 className="font-bold mb-6 underline font-montserrat">
               MUJERES
@@ -84,7 +88,6 @@ export default function Footer() {
             </nav>
           </div>
 
-          {/* Hombres */}
           <div className="col-span-1 text-left sm:text-center lg:text-center">
             <h3 className="text-gray-900 font-bold mb-6 underline font-montserrat">
               HOMBRES
@@ -102,7 +105,6 @@ export default function Footer() {
             </nav>
           </div>
 
-          {/* Niños */}
           <div className="col-span-1 text-left sm:text-center lg:text-center">
             <h3 className="text-gray-900 font-bold mb-6 underline font-montserrat">
               NIÑOS
@@ -119,8 +121,6 @@ export default function Footer() {
               ))}
             </nav>
           </div>
-
-          {/* Explora */}
           <div className="col-span-1 text-left sm:text-center lg:text-center">
             <h3 className="text-gray-900 font-bold mb-6 underline font-montserrat">
               EXPLORA

@@ -3,8 +3,8 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeftIcon, ChevronRightIcon } from "../../Icons";
 import ProductCard from "../../ProductCard";
-import useNextSlide from "@/app/hooks/useNextSlide";
-import { bestSellersProducts } from "@/app/data/bestSellersProducts.data";
+import { bestSellersProducts } from "@/data/bestSellersProducts.data";
+import useNextSlide from "@/hooks/useNextSlide";
 
 export default function BestSellersSection() {
   const {

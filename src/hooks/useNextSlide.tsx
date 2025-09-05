@@ -1,5 +1,5 @@
+import { bestSellersProducts } from "@/data/bestSellersProducts.data";
 import { useState } from "react";
-import { bestSellersProducts } from "../data/bestSellersProducts.data";
 
 export default function useNextSlide() {
   const [currentIndex, setCurrentIndex] = useState(0);

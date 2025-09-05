@@ -156,72 +156,32 @@ export const menNavs = [
 
 export const exploreNavs = [
   {
-    label: "Colecciones",
+    label: "Sobre Nosotros",
     navs: [
       {
-        title: "Nueva Colección",
+        title: "Sobre Nosotros",
         desc: "Lo último en moda",
         path: "/explora/colecciones/nueva",
       },
-      {
-        title: "Tendencias",
-        desc: "Las tendencias del momento",
-        path: "/explora/colecciones/tendencias",
-      },
-      {
-        title: "Básicos",
-        desc: "Piezas esenciales",
-        path: "/explora/colecciones/basicos",
-      },
     ],
   },
   {
-    label: "Por Ocasión",
+    label: "Preguntas Frecuentes",
     navs: [
       {
-        title: "Trabajo",
+        title: "Preguntas Frecuentes",
         desc: "Outfits profesionales",
         path: "/explora/ocasion/trabajo",
       },
-      {
-        title: "Casual",
-        desc: "Para el día a día",
-        path: "/explora/ocasion/casual",
-      },
-      {
-        title: "Fiesta",
-        desc: "Para ocasiones especiales",
-        path: "/explora/ocasion/fiesta",
-      },
     ],
   },
   {
-    label: "Sostenibilidad",
+    label: "Canal de YouTube",
     navs: [
       {
-        title: "Eco-Friendly",
+        title: "Canal de YouTube",
         desc: "Productos sostenibles",
         path: "/explora/sostenibilidad/eco-friendly",
-      },
-      {
-        title: "Materiales Orgánicos",
-        desc: "Ropa de materiales naturales",
-        path: "/explora/sostenibilidad/organicos",
-      },
-    ],
-  },
-  {
-    label: "Outlet",
-    navs: [
-      {
-        title: "Ofertas",
-        desc: "Productos en descuento",
-        path: "/explora/outlet/ofertas",
-      },
-      {
-        title: "Liquidación",
-        desc: "Últimas piezas",
-        path: "/explora/outlet/liquidacion",
       },
     ],
   },

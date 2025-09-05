@@ -1,7 +1,7 @@
+import { womenNavs, menNavs, kidsNavs, exploreNavs } from "@/data/navs.data";
+import { NavigationItem } from "@/interfaces/navigation.interface";
 import { ChevronUpIcon, ChevronDownIcon } from "./Icons";
 import { DropdownState } from "./ui/Navbar";
-import { NavigationItem } from "../interfaces/navigation.interface";
-import { exploreNavs, kidsNavs, menNavs, womenNavs } from "../data/navs.data";
 import Link from "next/link";
 
 interface Props {
