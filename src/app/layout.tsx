@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import Navbar from "./components/layout/Navbar";
 import "./globals.css";
+import Navbar from "./components/ui/Navbar";
 
 export const metadata: Metadata = {
   title: "OH",
@@ -15,8 +15,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`antialiased min-h-screen flex flex-col`}>
-        <Navbar />
-        <main className="flex-1">{children}</main>
+        <main className="flex-1">
+          <Navbar />
+          {children}
+        </main>
       </body>
     </html>
   );
