@@ -99,7 +99,7 @@ export function CartIcon() {
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      strokeWidth={2}
+      strokeWidth={1.5}
       strokeLinecap="round"
       strokeLinejoin="round"
       className="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart"
@@ -122,7 +122,7 @@ export function HeartIcon() {
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      strokeWidth={2}
+      strokeWidth={1.5}
       strokeLinecap="round"
       strokeLinejoin="round"
       className="icon icon-tabler icons-tabler-outline icon-tabler-heart"

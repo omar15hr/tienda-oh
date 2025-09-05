@@ -1,1 +1,13 @@
 @import "tailwindcss";
+
+.font-autour {
+  font-family: "Autour One", sans-serif;
+}
+
+.font-montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+.font-poppins {
+  font-family: "Poppins", sans-serif;
+}
