@@ -17,7 +17,7 @@ export default function HeroSection() {
               BIENVENIDO <br /> A DISEÑOS <br /><span className="font-autour">OH</span>
             </h1>
           </div>
-          <p className="text-default-500 text-center leading-7 font-normal sm:w-[466px] sm:text-[18px] font-poppins">
+          <p className="text-center leading-7 font-normal sm:w-[466px] sm:text-[18px] font-poppins">
             Acme makes running global teams simple. HR, Payroll, International
             Employment, contractor management and more.
           </p>
