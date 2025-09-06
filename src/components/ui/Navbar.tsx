@@ -1,9 +1,8 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import { CloseIcon, MenuIcon, CartIcon, HeartIcon } from "@/components/Icons";
-import NavigationComponent from "../NavigationComponent";
 import SearchInput from "../SearchInput";
 
 export type DropdownState = {
@@ -13,25 +12,29 @@ export type DropdownState = {
 
 export default function Navbar() {
   const [state, setState] = useState(false);
-  const [drapdownState, setDrapdownState] = useState<DropdownState>({
-    isActive: false,
-    idx: null,
-  });
 
-  useEffect(() => {
-    const handleClick = (e: MouseEvent) => {
-      const target = e.target as HTMLElement | null;
-      if (target && !target.closest(".nav-menu")) {
-        setDrapdownState({ isActive: false, idx: null });
-      }
-    };
-
-    document.addEventListener("click", handleClick);
-
-    return () => {
-      document.removeEventListener("click", handleClick);
-    };
-  }, []);
+  const navigation = [
+    {
+      title: "Mujeres",
+      path: "javascript:void(0)",
+      isDrapdown: true,
+    },
+    {
+      title: "Hombres",
+      path: "javascript:void(0)",
+      isDrapdown: true,
+    },
+    {
+      title: "Niños",
+      path: "javascript:void(0)",
+      isDrapdown: true,
+    },
+    {
+      title: "Explora",
+      path: "javascript:void(0)",
+      isDrapdown: true,
+    },
+  ];
 
   return (
     <header>
@@ -60,10 +63,15 @@ export default function Navbar() {
             }`}
           >
             <ul className="items-center space-y-6 md:flex md:space-x-6 md:space-y-0">
-              <NavigationComponent
-                drapdownState={drapdownState}
-                setDrapdownState={setDrapdownState}
-              />
+              {navigation.map((item, idx) => (
+                <li key={idx} className="group">
+                  <Link href={item.path} className="flex gap-3 items-center">
+                    <span className="text-gray-800 duration-200 group-hover:text-indigo-600 font-poppins text-sm font-medium md:text-base">
+                      {item.title}
+                    </span>
+                  </Link>
+                </li>
+              ))}
               <div className="flex-1 items-center justify-end gap-x-6 space-y-3 md:flex md:space-y-0">
                 <SearchInput />
                 <div className="flex items-center gap-x-4">
