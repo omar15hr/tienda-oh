@@ -4,12 +4,15 @@ import { Product } from "@/interfaces/product.interface";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
 interface Props {
   product: Product;
 }
 
 export default function BestSellerProductCard({ product }: Props) {
+  const [displayName, setDisplayName] = useState(product.images[0]);
+
   return (
     <motion.div
       key={product.slug}
@@ -18,11 +21,11 @@ export default function BestSellerProductCard({ product }: Props) {
       className="bg-white group hover:shadow-lg transition-shadow duration-300"
     >
       <Link
-        href={`/products/${product.images[0]}`}
+        href={`product/${product.slug}`}
         className="aspect-square overflow-hidden bg-gray-50"
       >
         <Image
-          src={`/images/sweater.jpg`}
+          src={`${displayName}`}
           alt={`${product.title} - ${product.slug}`}
           width={400}
           height={400}
@@ -35,7 +38,7 @@ export default function BestSellerProductCard({ product }: Props) {
           <div>
             <Link
               href={`product/${product.slug}`}
-              className="font-medium text-gray-900 text-lg cursor-pointer"
+              className="font-medium text-gray-900 hover:text-indigo-700 text-lg cursor-pointer"
             >
               {product.title}
             </Link>

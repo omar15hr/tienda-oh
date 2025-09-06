@@ -11,3 +11,9 @@
 .font-poppins {
   font-family: "Poppins", sans-serif;
 }
+
+@media (min-width: 640px) {
+  .hero-section {
+    background-image: var(--bg-desktop) !important;
+  }
+}

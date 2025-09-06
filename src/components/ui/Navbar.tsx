@@ -16,22 +16,22 @@ export default function Navbar() {
   const navigation = [
     {
       title: "Mujeres",
-      path: "javascript:void(0)",
+      path: "/category/women",
       isDrapdown: true,
     },
     {
       title: "Hombres",
-      path: "javascript:void(0)",
+      path: "/category/men",
       isDrapdown: true,
     },
     {
       title: "Niños",
-      path: "javascript:void(0)",
+      path: "/category/kids",
       isDrapdown: true,
     },
     {
       title: "Explora",
-      path: "javascript:void(0)",
+      path: "/category/explore",
       isDrapdown: true,
     },
   ];

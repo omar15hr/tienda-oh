@@ -1,4 +1,4 @@
-import HeroSection from "../components/sections/landing/HeroSection";
+import HeroSection from "../components/HeroSection";
 import OriginSection from "../components/sections/landing/OriginSection";
 import ImagesSection from "../components/sections/landing/ImagesSection";
 import ProductListSection from "../components/sections/landing/ProductListSection";
@@ -11,7 +11,13 @@ const products = initialData.products;
 export default function Home() {
   return (
     <div>
-      <HeroSection />
+      <HeroSection
+        title="BIENVENIDOS A DISEÑOS OH"
+        description="Acme makes running global teams simple. HR, Payroll, International
+            Employment, contractor management and more."
+        imageUrl="/images/hero-mobile.jpg"
+        mobileImageUrl="/images/hero.jpeg"
+      />
       <BestSellersSection />
       <OriginSection />
       <ImagesSection />
