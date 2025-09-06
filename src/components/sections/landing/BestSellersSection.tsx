@@ -2,9 +2,9 @@
 
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeftIcon, ChevronRightIcon } from "../../Icons";
-import ProductCard from "../../ProductCard";
 import { bestSellersProducts } from "@/data/bestSellersProducts.data";
 import useNextSlide from "@/hooks/useNextSlide";
+import BestSellerProductCard from "@/components/products/product-grid/BestSellerProductCard";
 
 export default function BestSellersSection() {
   const {
@@ -59,7 +59,7 @@ export default function BestSellersSection() {
                 className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
               >
                 {visibleProducts.map((product, index) => (
-                  <ProductCard key={index} product={product} index={index} />
+                  <BestSellerProductCard key={index} product={product} />
                 ))}
               </motion.div>
             </AnimatePresence>

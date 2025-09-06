@@ -1,9 +1,15 @@
 export interface Product {
-  id: number;
-  name: string;
-  variant: string;
-  price: number;
-  rating: number;
-  reviews: number;
-  image: string;
+    description: string;
+    images: string[];
+    inStock: number;
+    price: number;
+    sizes: ValidSizes[];
+    slug: string;
+    tags: string[];
+    title: string;
+    type: ValidTypes;
+    gender: 'men'|'women'|'kid';
 }
+
+type ValidSizes = 'XS'|'S'|'M'|'L'|'XL'|'XXL'|'XXXL';
+type ValidTypes = 'shirts'|'pants'|'hoodies'|'t-shirts';

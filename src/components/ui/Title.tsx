@@ -10,5 +10,5 @@ export default function Title({ title, subtitle, className }: Props) {
       <h1 className="font-montserrat text-4xl font-semibold my-10">{title}</h1>
       {subtitle && <p className="text-lg">{subtitle}</p>}
     </div>
-  )
+  );
 }
