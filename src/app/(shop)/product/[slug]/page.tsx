@@ -1,3 +1,4 @@
+import ProductSlideShow from "@/components/product/ProductSlideShow";
 import SizeSelector from "@/components/product/SizeSelector";
 import { initialData } from "@/seed/seed";
 import { notFound } from "next/navigation";
@@ -18,17 +19,15 @@ export default async function ProductPage({ params }: Props) {
 
   return (
     <div className="mt-5 mb-20 grid grid-cols-1 md:grid-cols-3 gap-3">
-      <div className="col-span-1 md:col-span-2">
-        <h1>Hola Mundo</h1>
+      <div className="col-span-1 md:col-span-2 px-5">
+        <ProductSlideShow title={product.title} images={product.images} />
       </div>
 
       <div className="col-span-1 px-5 font-poppins">
         <h1 className="font-bold text-xl">{product.title}</h1>
         <p className="text-lg mb-5">${product.price}</p>
 
-        <SizeSelector
-          availableSizes={product.sizes}
-        />
+        <SizeSelector availableSizes={product.sizes} />
 
         <button className="bg-black text-white text-small h-10 w-[183px] px-[16px] py-[10px] leading-5 font-medium font-poppins cursor-pointer">
           Nueva Colección
