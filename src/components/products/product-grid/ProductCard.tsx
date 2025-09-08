@@ -19,7 +19,7 @@ export default function ProductCard({ product }: Props) {
       key={product.slug}
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      className="bg-white group hover:shadow-lg transition-shadow duration-300"
+      className="bg-white group hover:shadow-lg shadow transition-shadow duration-300"
     >
       <Link
         href={`product/${product.slug}`}
