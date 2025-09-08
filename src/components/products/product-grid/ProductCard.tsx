@@ -37,7 +37,7 @@ export default function ProductCard({ product }: Props) {
       </Link>
 
       <div className="p-6">
-        <div className="flex justify-between items-start mb-2">
+        <div className="flex justify-between items-start mb-2 font-poppins">
           <div>
             <Link
               href={`product/${product.slug}`}

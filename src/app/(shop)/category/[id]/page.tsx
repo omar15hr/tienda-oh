@@ -1,11 +1,12 @@
 import HeroSection from "@/components/HeroSection";
 import ProductGrid from "@/components/products/product-grid/ProductGrid";
+import { ValidCategories } from "@/interfaces/product.interface";
 import { initialData } from "@/seed/seed";
 
 const seedProducts = initialData.products;
 
 interface Props {
-  params: Promise<{ id: string }>;
+  params: Promise<{ id: ValidCategories }>;
 }
 
 export default async function CategoryPage({ params }: Props) {
