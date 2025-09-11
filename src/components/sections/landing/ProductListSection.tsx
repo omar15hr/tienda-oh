@@ -4,73 +4,73 @@ const products = [
   {
     id: 1,
     image:
-      "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=300&h=300&fit=crop&crop=center&q=80",
+      "/images/sweater.jpg",
     alt: "White Sneakers",
   },
   {
     id: 2,
     image:
-      "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=300&h=300&fit=crop&crop=center&q=80",
+      "/images/sweater.jpg",
     alt: "Black Sneakers",
   },
   {
     id: 3,
     image:
-      "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=300&h=300&fit=crop&crop=center&q=80",
+      "/images/sweater.jpg",
     alt: "Grey Sneakers",
   },
   {
     id: 4,
     image:
-      "https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?w=300&h=300&fit=crop&crop=center&q=80",
+      "/images/sweater.jpg",
     alt: "Classic White",
   },
   {
     id: 5,
     image:
-      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=300&h=300&fit=crop&crop=center&q=80",
+      "/images/sweater.jpg",
     alt: "Navy Sneakers",
   },
   {
     id: 6,
     image:
-      "https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=300&h=300&fit=crop&crop=center&q=80",
+      "/images/sweater.jpg",
     alt: "Brown Sneakers",
   },
   {
     id: 7,
     image:
-      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&h=300&fit=crop&crop=center&q=80",
+      "/images/sweater.jpg",
     alt: "Black Leather",
   },
   {
     id: 8,
     image:
-      "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=300&h=300&fit=crop&crop=center&q=80",
+      "/images/sweater.jpg",
     alt: "Beige Sneakers",
   },
   {
     id: 9,
     image:
-      "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=300&h=300&fit=crop&crop=center&q=80",
+      "/images/sweater.jpg",
     alt: "Colorful Sneakers",
   },
   {
     id: 10,
     image:
-      "https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=300&h=300&fit=crop&crop=center&q=80",
+      "/images/sweater.jpg",
     alt: "Light Grey",
   },
   {
     id: 11,
     image:
-      "https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?w=300&h=300&fit=crop&crop=center&q=80",
+      "/images/sweater.jpg",
     alt: "Blue Sneakers",
   },
   {
     id: 12,
     image:
-      "https://images.unsplash.com/photo-1605348532760-6753d2c43329?w=300&h=300&fit=crop&crop=center&q=80",
+      "/images/sweater.jpg",
     alt: "White Athletic",
   },
 ];

@@ -1,9 +1,8 @@
 "use client";
 
-import { useState } from "react";
 import Link from "next/link";
-import { CloseIcon, MenuIcon, CartIcon, HeartIcon } from "@/components/Icons";
-import SearchInput from "../SearchInput";
+import { useState } from "react";
+import { CloseIcon, MenuIcon, WhatsAppIcon } from "@/components/Icons";
 
 export type DropdownState = {
   isActive: boolean;
@@ -73,15 +72,13 @@ export default function Navbar() {
                 </li>
               ))}
               <div className="flex-1 items-center justify-end gap-x-6 space-y-3 md:flex md:space-y-0">
-                <SearchInput />
-                <div className="flex items-center gap-x-4">
-                  <Link href="">
-                    <CartIcon />
-                  </Link>
-                  <Link href="">
-                    <HeartIcon />
-                  </Link>
-                </div>
+                <Link
+                  href={"https://wa.me/5493515555555"}
+                  className="flex gap-2 items-center justify-center bg-black text-white text-small h-10 w-[193px] px-[18px] py-[10px] leading-5 font-medium font-poppins cursor-pointer"
+                >
+                  <WhatsAppIcon />
+                  Compra ahora
+                </Link>
               </div>
             </ul>
           </div>

@@ -1,7 +1,9 @@
+import { WhatsAppIcon } from "@/components/Icons";
 import ProductMobileSlideShow from "@/components/product/ProductMobileSlideShow";
 import ProductSlideShow from "@/components/product/ProductSlideShow";
 import SizeSelector from "@/components/product/SizeSelector";
 import { initialData } from "@/seed/seed";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 
 interface Props {
@@ -21,13 +23,11 @@ export default async function ProductPage({ params }: Props) {
   return (
     <div className="mt-5 mb-20 grid grid-cols-1 md:grid-cols-3 gap-3">
       <div className="col-span-1 md:col-span-2 px-5">
-        {/* Mobile slideshow - only visible on mobile */}
         <ProductMobileSlideShow
           className="block md:hidden"
           title={product.title}
           images={product.images}
         />
-        {/* Desktop slideshow - only visible on desktop */}
         <ProductSlideShow
           className="hidden md:block"
           title={product.title}
@@ -41,9 +41,13 @@ export default async function ProductPage({ params }: Props) {
 
         <SizeSelector availableSizes={product.sizes} />
 
-        <button className="bg-black text-white text-small h-10 w-[183px] px-[16px] py-[10px] leading-5 font-medium font-poppins cursor-pointer">
-          Nueva Colección
-        </button>
+        <Link
+          href={"https://wa.me/5493515555555"}
+          className="flex gap-2 items-center justify-center bg-black text-white text-small h-10 w-[193px] px-[18px] py-[10px] leading-5 font-medium font-poppins cursor-pointer"
+        >
+          <WhatsAppIcon />
+          Compra ahora
+        </Link>
 
         <h3 className="font-bold text-md mb-2 mt-10 font-montserrat">
           Descripción
