@@ -1,3 +1,4 @@
+import ProductMobileSlideShow from "@/components/product/ProductMobileSlideShow";
 import ProductSlideShow from "@/components/product/ProductSlideShow";
 import SizeSelector from "@/components/product/SizeSelector";
 import { initialData } from "@/seed/seed";
@@ -20,7 +21,18 @@ export default async function ProductPage({ params }: Props) {
   return (
     <div className="mt-5 mb-20 grid grid-cols-1 md:grid-cols-3 gap-3">
       <div className="col-span-1 md:col-span-2 px-5">
-        <ProductSlideShow title={product.title} images={product.images} />
+        {/* Mobile slideshow - only visible on mobile */}
+        <ProductMobileSlideShow
+          className="block md:hidden"
+          title={product.title}
+          images={product.images}
+        />
+        {/* Desktop slideshow - only visible on desktop */}
+        <ProductSlideShow
+          className="hidden md:block"
+          title={product.title}
+          images={product.images}
+        />
       </div>
 
       <div className="col-span-1 px-5 font-poppins">
