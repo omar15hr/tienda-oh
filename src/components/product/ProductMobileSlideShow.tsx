@@ -24,7 +24,7 @@ export default function ProductMobileSlideShow({
     <div className={className}>
       <Swiper
         style={{
-          width: "100vw",
+          width: "90vw",
           height: "500px",
         }}
         pagination={{

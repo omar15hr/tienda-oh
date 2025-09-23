@@ -16,19 +16,19 @@ const products = [
   {
     id: 3,
     image:
-      "/images/sweater.jpg",
+      "/images/short-negro-bordes-amarillos.svg",
     alt: "Grey Sneakers",
   },
   {
     id: 4,
     image:
-      "/images/sweater.jpg",
+      "/images/short-azul-fresh-and-go.svg",
     alt: "Classic White",
   },
   {
     id: 5,
     image:
-      "/images/sweater.jpg",
+      "/images/short-morado-oh-bolsillos-negros.svg",
     alt: "Navy Sneakers",
   },
   {

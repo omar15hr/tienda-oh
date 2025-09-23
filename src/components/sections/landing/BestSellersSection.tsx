@@ -25,7 +25,7 @@ export default function BestSellersSection() {
             MÁS VENDIDOS
           </h2>
           <p className="text-lg max-w-2xl mx-auto font-poppins">
-            Discover our most popular footwear, loved by customers worldwide
+            Descubre nuestros productos más vendidos, adorados por nuestros clientes en OH
           </p>
         </div>
 

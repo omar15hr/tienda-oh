@@ -27,10 +27,10 @@ export default function OriginSection() {
 
           <div className="absolute bottom-8 left-8 right-8 z-20">
             <div className="bg-white/90 backdrop-blur-sm p-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-2">
+              <h3 className="text-xl font-bold text-gray-900 mb-2 font-montserrat">
                 Nos preocupamos por la calidad
               </h3>
-              <p className="text-gray-700 text-sm leading-relaxed">
+              <p className="text-gray-700 text-sm leading-relaxed font-poppins">
                 Cada prenda es seleccionada para garantizar la máxima calidad y comodidad.
               </p>
             </div>
