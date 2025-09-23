@@ -22,7 +22,7 @@ export default function ProductCard({ product }: Props) {
       className="bg-white group hover:shadow-lg shadow transition-shadow duration-300"
     >
       <Link
-        href={`product/${product.slug}`}
+        href={`/product/${product.slug}`}
         className="aspect-square overflow-hidden bg-gray-50"
       >
         <Image
@@ -40,7 +40,7 @@ export default function ProductCard({ product }: Props) {
         <div className="flex justify-between items-start mb-2 font-poppins">
           <div>
             <Link
-              href={`product/${product.slug}`}
+              href={`/product/${product.slug}`}
               className="font-medium text-gray-900 text-lg cursor-pointer"
             >
               {product.title}
