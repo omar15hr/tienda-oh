@@ -50,9 +50,7 @@ export default function Footer() {
           <div className="col-span-1 sm:col-span-2 lg:col-span-1">
             <h2 className="text-4xl font-bold mb-4 font-autour">OH</h2>
             <p className="text-sm leading-relaxed mb-8 font-poppins">
-              House of Blanks is a factory brand produced by Roopa Knitting
-              Mills, the makers of the world&apos;s highest quality knit fabrics
-              and apparel.
+              OH Sports es una marca de ropa para hombres, mujeres y niños. Nuestra misión es brindar ropa de alta calidad y estética.
             </p>
 
             <div>

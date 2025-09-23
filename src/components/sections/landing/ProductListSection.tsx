@@ -4,13 +4,13 @@ const products = [
   {
     id: 1,
     image:
-      "/images/sweater.jpg",
+      "/images/polera-train-rest-repeat.svg",
     alt: "White Sneakers",
   },
   {
     id: 2,
     image:
-      "/images/sweater.jpg",
+      "/images/short-azul-oh-bolsillo-rojo.svg",
     alt: "Black Sneakers",
   },
   {

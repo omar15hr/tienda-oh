@@ -23,10 +23,10 @@ export const initialData: SeedData = {
     {
       description:
         "Introducing the Tesla Chill Collection. The Men’s Chill Crew Neck Sweatshirt has a premium, heavyweight exterior and soft fleece interior for comfort in any season. The sweatshirt features a subtle thermoplastic polyurethane T logo on the chest and a Tesla wordmark below the back collar. Made from 60% cotton and 40% recycled polyester.",
-      images: ["/images/polera-train-rest-repeat.svg", "/images/origin.jpg"],
+      images: ["/images/polera-train-rest-repeat.svg", "/images/2polera-train-rest-repeat.svg"],
       inStock: 7,
-      price: 9.990,
-      sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+      price: 9990,
+      sizes: ["S", "M", "L", "XL", "XXL"],
       slug: "polera_train_rest_repeat",
       type: "shirts",
       tags: ["sweatshirt"],
@@ -36,14 +36,14 @@ export const initialData: SeedData = {
     {
       description:
         "The Men's Quilted Shirt Jacket features a uniquely fit, quilted design for warmth and mobility in cold weather seasons. With an overall street-smart aesthetic, the jacket features subtle silicone injected Tesla logos below the back collar and on the right sleeve, as well as custom matte metal zipper pulls. Made from 87% nylon and 13% polyurethane.",
-      images: ["/images/polera-train-rest-repeat.svg", "/images/origin.jpg"],
+      images: ["/images/short-azul-oh-bolsillo-rojo.svg", "/images/short-azul-oh-bolsillo-rojo.svg"],
       inStock: 5,
-      price: 200,
+      price: 8990,
       sizes: ["XS", "S", "M", "XL", "XXL"],
-      slug: "men_quilted_shirt_jacket",
+      slug: "short_azul_oh_bolsillo_rojo",
       type: "shirts",
       tags: ["jacket"],
-      title: "Men's Quilted Shirt Jacket",
+      title: "Short Azul OH Bolsillo Rojo",
       gender: "men",
     },
 

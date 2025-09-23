@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function ImagesSection() {
   return (
@@ -38,15 +39,15 @@ export default function ImagesSection() {
 
         <div className="text-center mt-16">
           <p className="text-lg mb-8 max-w-2xl mx-auto font-poppins">
-            Discover our carefully curated collections designed for every style and occasion
+            Descubre nuestras colecciones cuidadosamente seleccionadas para cada estilo y ocasión
           </p>
           <div className="flex flex-col sm:flex-row items-center gap-4 justify-center">
-            <button className="bg-black text-white text-small h-10 w-[193px] px-[16px] py-[10px] leading-5 font-medium font-poppins cursor-pointer">
+            <Link href="/category/men" className="bg-black text-white text-small h-10 w-[193px] px-[16px] py-[10px] leading-5 font-medium font-poppins cursor-pointer">
               Colección Hombres
-            </button>
-            <button className="border-black text-small h-10 w-[193px] border-1 px-[16px] py-[10px] leading-5 font-medium font-poppins cursor-pointer">
+            </Link>
+            <Link href="/category/women" className="border-black text-small h-10 w-[193px] border-1 px-[16px] py-[10px] leading-5 font-medium font-poppins cursor-pointer">
               Colección Mujeres
-            </button>
+            </Link>
           </div>
         </div>
       </div>

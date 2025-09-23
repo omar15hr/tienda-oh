@@ -24,7 +24,7 @@ export default async function CategoryPage({ params }: Props) {
     },
     men: {
       title: "Hombres",
-      description: "Ropa diseñada para hombres",
+      description: "Ropa diseñada para hombres. Estilos modernos, cómodos y duraderos.",
       imageUrl: "/images/sweater.jpg",
     },
     kids: {
@@ -33,7 +33,7 @@ export default async function CategoryPage({ params }: Props) {
       imageUrl: "/images/sweater.jpg",
     },
     explore: {
-      title: "Explora nuestro catálogo completo",
+      title: "Explora nuestro catálogo de contenido",
       description: "Todo nuestro mundo de ropa",
       imageUrl: "/images/sweater.jpg",
     },
