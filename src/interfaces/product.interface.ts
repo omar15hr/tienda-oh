@@ -11,6 +11,6 @@ export interface Product {
   gender: "men" | "women" | "kid";
 }
 
-export type ValidCategories = "men" | "women" | "kid" | "explore";
+export type ValidCategories = "men" | "women" | "kid" | "uniforms";
 export type ValidSizes = "XS" | "S" | "M" | "L" | "XL" | "XXL" | "XXXL";
 export type ValidTypes = "shirts" | "pants" | "hoodies" | "t-shirts";

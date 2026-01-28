@@ -32,8 +32,8 @@ export default async function CategoryPage({ params }: Props) {
       description: "Ropa diseñada para niños",
       imageUrl: "/images/sweater.jpg",
     },
-    explore: {
-      title: "Explora nuestro catálogo de contenido",
+    uniforms: {
+      title: "Explora nuestro catálogo de uniformes deportivos",
       description: "Todo nuestro mundo de ropa",
       imageUrl: "/images/sweater.jpg",
     },
@@ -50,7 +50,6 @@ export default async function CategoryPage({ params }: Props) {
       <HeroSection
         title={heroProps.title}
         description={heroProps.description}
-        imageUrl={heroProps.imageUrl}
       />
 
       <ProductGrid products={products} />

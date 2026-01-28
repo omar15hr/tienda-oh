@@ -8,41 +8,41 @@ import {
 } from "@/components/Icons";
 import Link from "next/link";
 
+const socialLinks = [
+  { icon: <InstagramIcon />, href: "#" },
+  { icon: <FacebookIcon />, href: "#" },
+  { icon: <TikTokIcon />, href: "#" },
+  { icon: <YoutubeIcon />, href: "#" },
+];
+
+const womenItems = [
+  { label: "Vestidos", href: "#" },
+  { label: "Tops", href: "#" },
+  { label: "Faldas", href: "#" },
+  { label: "Shorts", href: "#" },
+  { label: "Poleras", href: "#" },
+];
+
+const menItems = [
+  { label: "Polerones", href: "#" },
+  { label: "Poleras", href: "#" },
+  { label: "Shorts", href: "#" },
+  { label: "Musculosas", href: "#" },
+];
+
+const kidsItems = [
+  { label: "Polerones", href: "#" },
+  { label: "Poleras", href: "#" },
+  { label: "Shorts", href: "#" },
+];
+
+const exploreItems = [
+  { label: "Sobre Nosotros", href: "#" },
+  { label: "FAQ", href: "#" },
+  { label: "Canal de Youtube", href: "#" },
+];
+
 export default function Footer() {
-  const socialLinks = [
-    { icon: <InstagramIcon />, href: "#" },
-    { icon: <FacebookIcon />, href: "#" },
-    { icon: <TikTokIcon />, href: "#" },
-    { icon: <YoutubeIcon />, href: "#" },
-  ];
-
-  const womenItems = [
-    { label: "Vestidos", href: "#" },
-    { label: "Tops", href: "#" },
-    { label: "Faldas", href: "#" },
-    { label: "Shorts", href: "#" },
-    { label: "Poleras", href: "#" },
-  ];
-
-  const menItems = [
-    { label: "Polerones", href: "#" },
-    { label: "Poleras", href: "#" },
-    { label: "Shorts", href: "#" },
-    { label: "Musculosas", href: "#" },
-  ];
-
-  const kidsItems = [
-    { label: "Polerones", href: "#" },
-    { label: "Poleras", href: "#" },
-    { label: "Shorts", href: "#" },
-  ];
-
-  const exploreItems = [
-    { label: "Sobre Nosotros", href: "#" },
-    { label: "FAQ", href: "#" },
-    { label: "Canal de Youtube", href: "#" },
-  ];
-
   return (
     <footer className="bg-white border-t border-gray-200">
       <div className="max-w-7xl mx-auto px-4 py-8 md:py-16">
@@ -50,7 +50,9 @@ export default function Footer() {
           <div className="col-span-1 sm:col-span-2 lg:col-span-1">
             <h2 className="text-4xl font-bold mb-4 font-autour">OH</h2>
             <p className="text-sm leading-relaxed mb-8 font-poppins">
-              OH Sports es una marca de ropa para hombres, mujeres y niños. Nuestra misión es brindar ropa de alta calidad y estética.
+              OH Sports es una marca de ropa para hombres, mujeres, niños y
+              uniformes deportivos. Nuestra misión es brindar ropa de alta
+              calidad y estética.
             </p>
 
             <div>

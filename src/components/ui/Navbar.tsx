@@ -9,31 +9,31 @@ export type DropdownState = {
   idx: number | null;
 };
 
+const navigation = [
+  {
+    title: "Mujeres",
+    path: "/category/women",
+    isDrapdown: true,
+  },
+  {
+    title: "Hombres",
+    path: "/category/men",
+    isDrapdown: true,
+  },
+  {
+    title: "Niños",
+    path: "/category/kids",
+    isDrapdown: true,
+  },
+  {
+    title: "Uniformes",
+    path: "/category/uniforms",
+    isDrapdown: true,
+  },
+];
+
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const navigation = [
-    {
-      title: "Mujeres",
-      path: "/category/women",
-      isDrapdown: true,
-    },
-    {
-      title: "Hombres",
-      path: "/category/men",
-      isDrapdown: true,
-    },
-    {
-      title: "Niños",
-      path: "/category/kids",
-      isDrapdown: true,
-    },
-    {
-      title: "Explora",
-      path: "/category/explore",
-      isDrapdown: true,
-    },
-  ];
 
   const handleMenuToggle = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -76,7 +76,11 @@ export default function Navbar() {
             <ul className="items-center space-y-6 md:flex md:space-x-6 md:space-y-0">
               {navigation.map((item, idx) => (
                 <li key={idx} className="group">
-                  <Link href={item.path} className="flex gap-3 items-center" onClick={handleLinkClick}>
+                  <Link
+                    href={item.path}
+                    className="flex gap-3 items-center"
+                    onClick={handleLinkClick}
+                  >
                     <span className="text-gray-800 duration-200 group-hover:text-indigo-600 font-poppins text-sm font-medium md:text-base">
                       {item.title}
                     </span>

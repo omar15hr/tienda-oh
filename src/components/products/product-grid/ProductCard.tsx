@@ -12,7 +12,7 @@ interface Props {
 
 export default function ProductCard({ product }: Props) {
 
-  const [displayName, setDisplayName] = useState(product.images[0]);
+  const [displayName] = useState(product.images[0]);
 
   return (
     <motion.div
@@ -37,7 +37,7 @@ export default function ProductCard({ product }: Props) {
       </Link>
 
       <div className="p-6">
-        <div className="flex justify-between items-start mb-2 font-poppins">
+        <div className="flex flex-col justify-between items-start mb-2 font-poppins">
           <div>
             <Link
               href={`/product/${product.slug}`}
@@ -47,7 +47,7 @@ export default function ProductCard({ product }: Props) {
             </Link>
             <p className="text-gray-600">{product.gender}</p>
           </div>
-          <p className="font-bold text-xl text-gray-900">${product.price}</p>
+          <p className="font-bold text-xl text-gray-900 mt-4">${product.price}</p>
         </div>
       </div>
     </motion.div>
